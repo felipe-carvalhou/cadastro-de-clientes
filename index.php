@@ -35,17 +35,15 @@ include "conexao.php";
     $result = $conn->query($sql);
     while($row = $result->fetch_assoc()) {
        echo "<li>
-    <strong>Nome:</strong> {$row['nome']} - 
-    <strong>Telefone:</strong> {$row['telefone']} - 
-    <strong>Email:</strong> {$row['email']}
-    <a href='editar.php?id={$row['id']}' class='btn editar'>✏️ Editar</a>
-    <a href='deletar.php?id={$row['id']}' class='btn deletar' onclick='return confirm(\"Tem certeza que deseja deletar?\")'>🗑️ Deletar</a>
+<strong>Nome:</strong> {$row['nome']} - 
+<strong>Telefone:</strong> {$row['telefone']} - 
+<strong>Email:</strong> {$row['email']}
+<a class='btn editar' href='editar.php?id={$row['id']}' title='Editar'><i class='fas fa-edit'></i></a>
+<a class='btn deletar' href='deletar.php?id={$row['id']}' title='Deletar' onclick='return confirm(\"Tem certeza que deseja deletar?\")'><i class='fas fa-trash-alt'></i></a>
 </li>";
 
-        echo "<a class='btn editar' href='editar.php?id={$row['id']}' title='Editar'><i class='fas fa-edit'></i></a> ";
-        echo "<a class='btn deletar' href='deletar.php?id={$row['id']}' title='Deletar' onclick='return confirm(\"Tem certeza que deseja deletar?\")'><i class='fas fa-trash-alt'></i></a>";
 
-        echo "</li>";
+        
     }
     ?>
 </ul>

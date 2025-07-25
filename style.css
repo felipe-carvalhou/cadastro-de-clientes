@@ -1,7 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 * {
-    box-sizing: border-box; /* ajuda a manter proporções responsivas */
+    box-sizing: border-box; 
 }
 
 body {
@@ -134,7 +134,7 @@ ul li:hover {
     transform: scale(1.1);
 }
 
-/* 🔄 Responsividade extra para telas menores */
+
 @media (max-width: 600px) {
     body {
         padding: 10px;
