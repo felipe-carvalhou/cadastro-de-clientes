@@ -1,8 +1,8 @@
 <?php 
-$host = "localhost";
-$user = "root";
-$senha = "";
-$banco = "clientes_db";
+$host = "sql313.infinityfree.com";
+$user = "if0_39560659";
+$senha = "mohz0123";
+$banco = "if0_39560659_clientes";
 
 $conn = new mysqli($host, $user, $senha, $banco);
 

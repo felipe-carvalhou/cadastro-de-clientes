@@ -1,0 +1,15 @@
+{
+    "name": "lipet/php_projeto",
+    "autoload": {
+        "psr-4": {
+            "Lipet\\PhpProjeto\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Felipe Carvalho",
+            "email": "felipecarvalho1895@gmail.com"
+        }
+    ],
+    "require": {}
+}
