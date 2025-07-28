@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <div class="login-container">
-        <h2>Login</h2>
+        <h2>Bem-vindo à Agenda Online</h2>
         <form method="POST">
             <input type="text" name="usuario" placeholder="Usuário" required><br>
             <input type="password" name="senha" placeholder="Senha" required><br>
